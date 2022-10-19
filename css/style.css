@@ -1,0 +1,240 @@
+* {
+	box-sizing: border-box;
+ }
+ body{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	background-color: #a6ddef;
+}
+
+/* стили к 1 карточке     */
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-items: stretch;
+	}
+.userheader{
+	background-color: azure;
+	width:100% ;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.userCard + .userCard {
+	margin-left: 10px;
+ }
+
+ h3{
+	font-size:24px ;
+ }
+ p{
+	font-size:16px ;
+ }
+ .userCard {
+	display: flex;
+	flex-direction: column;
+	min-width:200px ;
+	max-width:400px ;
+ 	flex:1 1 auto ;
+	width:300px;
+	border: 1px solid red;
+	border-radius: 30px;
+	overflow: hidden;
+	text-align: center;
+	
+ }
+.userPhoto {
+	width:150px ;
+	height:150px ;
+	position: relative;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 2px solid white;
+	}
+ .star{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;	
+	background-color:white;
+	position: absolute;
+}
+.userName{
+	padding-top:10px;
+ }
+ .userInfo{
+	padding:10px ;
+ }
+ ol{
+	display: inline-flex;
+	font-size:16px ;
+	align-items: center;
+	flex-direction:row;
+	justify-content:space-evenly ;
+ }
+ .iconli{
+	padding-right:10px ;
+ }
+
+ .info{
+	background-color: rgb(241, 234, 234);
+	}
+
+ .btnOnline{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 0;
+}
+.btn,
+.btn1,
+.btn2
+ {
+	border-radius:10px ;
+	width:200px ;
+	height:30px ;
+	padding-top:5px ;
+	}
+.btn p{
+	padding-left:10px ;
+}
+
+.btn1{
+	border:3px solid rgb(23, 147, 220) ;
+	color: rgb(35, 122, 216);
+	}
+.btn2{
+	background-color: #1f85b9;
+	color: aliceblue;
+	}
+
+.olOnline{
+	padding-top:60px ;
+	display: flex;
+	justify-content:center;
+	font-size:14px ;
+	}
+.btn3{
+	padding-right:5px ;
+	width:5px ;
+	height:5px ;
+	border-radius:50% ;
+	background-color: rgb(15, 225, 64);
+	}
+
+.container + .container1 {
+	margin-top: 200px;
+}
+/* стили к 2 карточке     */
+.container1{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-items: stretch;
+}
+.userCard1{
+	margin-bottom:200px ;
+}
+
+.userCard1 + .userCard1 {
+	margin-left: 10px;
+	margin-bottom:200px ;
+ }
+
+ .userpho{
+	width: 180px;
+	height: 180px;
+	background-color:white;
+	position: absolute;
+	border-radius:50% ;
+	margin-left:157px ;
+	z-index: -2;
+	
+ }
+.userheader1{
+	height:90px ;
+	background-color:#a6ddef ;
+	width:100% ;
+	z-index:1 ;
+	
+}
+
+.userCard1{
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width:200px ;
+	max-width:500px ;
+ 	flex:1 1 auto ;
+	width:600px;
+	border-radius: 30px;
+	overflow: hidden;
+	text-align: center;
+	background-color:white;
+	
+ }
+.userPhoto1{
+	z-index:8;
+	width:150px ;
+	height:150px ;
+	margin-left:-1px ;
+	margin-top:10px ;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 2px solid rgb(157, 10, 96);
+	}
+	.userName1{
+	margin-top: 200px;
+	}
+	.linia{
+	border:1px solid rgb(203, 212, 203) ;
+	height: 1px;
+	margin-top:300px ;
+	width:400px ;
+}
+.olFollower{
+	padding-top:-8px ;
+	}
+.follower{
+padding-bottom: -5px;
+	width: 50px;
+	height: 50px;
+	border: 1px solid white ;
+	border-radius: 50px;
+}
+.userPhoto2{
+	width:50px ;
+	height:50px ;
+	object-fit: cover;
+	border-radius: 50%;
+	}
+.socials {
+	display: flex;
+	justify-content: center;
+	}
+ .socialsItem {
+	font-size: 20px;
+	color: aqua;
+}
+ .socialsItem + .socialsItem {
+	margin-left: 10px;
+ }
+ a {
+	text-decoration: none;
+	color: inherit;
+ }
+ 
+ .facebook {
+	color: #537bbf;
+ }
+ 
+ .twitter {
+	color: #68cdee;
+ }
+ 
+ .linkedIn {
+	color: #1f85b9;
+ }
