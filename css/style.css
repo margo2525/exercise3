@@ -9,10 +9,12 @@
 }
 
 /* стили к 1 карточке     */
+
+
 .container{
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	
 	align-items: stretch;
 	}
 .userheader{
@@ -25,15 +27,15 @@
 }
 .userCard + .userCard {
 	margin-left: 10px;
- }
+}
 
- h3{
+h3{
 	font-size:24px ;
- }
- p{
+}
+p{
 	font-size:16px ;
- }
- .userCard {
+	}
+.userCard {
 	display: flex;
 	flex-direction: column;
 	min-width:200px ;
@@ -45,60 +47,94 @@
 	overflow: hidden;
 	text-align: center;
 	
+}
+
+.userPhotoWrapper {
+	position: relative; 
+	margin: 10px;
  }
-.userPhoto {
-	width:150px ;
-	height:150px ;
-	position: relative;
+ .userPhoto {
+	width: 150px;
+	height: 150px;
 	object-fit: cover;
 	border-radius: 50%;
-	border: 2px solid white;
-	}
- .star{
+ }
+ .star {
 	width: 40px;
 	height: 40px;
-	border-radius: 50%;	
-	background-color:white;
+	border-radius: 50%;
+	background-color: white;
 	position: absolute;
-}
+	left: 50%; 
+	transform: translate(-50%, -60%); 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+
 .userName{
 	padding-top:10px;
- }
- .userInfo{
+}
+.userInfo{
 	padding:10px ;
- }
- ol{
+}
+.infoIcon{
 	display: inline-flex;
 	font-size:16px ;
 	align-items: center;
 	flex-direction:row;
 	justify-content:space-evenly ;
- }
- .iconli{
-	padding-right:10px ;
- }
-
- .info{
-	background-color: rgb(241, 234, 234);
-	}
-/* не работает   margin-top: 0;  карточки не стают одинакового размера */
- .btnOnline{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 0;
 }
-.btn,
+.iconli{
+	padding-right:10px ;
+}
+
+.info{
+	background-color: rgb(241, 234, 234);
+	flex-grow:1 ;
+}
+
+.btn{
+	display: flex;
+	flex-direction: row;
+	justify-content:center ;
+	align-items: center;
+	margin-top:40px ;
+}
+.btn1 + .btn2 {
+	margin-top: 100px;
+}
 .btn1,
-.btn2
- {
+.btn2 {
 	border-radius:10px ;
-	width:200px ;
+	width:200px;
 	height:30px ;
 	padding-top:5px ;
-	}
+	animation-delay: 1s;
+	flex-grow:1 ;
+	position: absolute;
+	
+}
+.btn1:hover {
+	background: #fff;
+	color: #0d0505;
+}
+.btn2:hover {
+	background: #fff;
+	color: #0d0505;
+	
+}
+
+a {
+	
+	color: inherit;
+	text-decoration: none;
+	font-size:16px ;
+}
+	
 .btn p{
-	padding-left:10px ;
+
+	padding-left:16px ;
 }
 
 .btn1{
@@ -106,6 +142,7 @@
 	color: rgb(35, 122, 216);
 	}
 .btn2{
+	border:3px solid rgb(23, 147, 220) ;
 	background-color: #1f85b9;
 	color: aliceblue;
 	}
@@ -113,11 +150,13 @@
 .olOnline{
 	padding-top:60px ;
 	display: flex;
-	justify-content:center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	font-size:14px ;
 	}
 .btn3{
-	padding-right:5px ;
+	align-items: center;
 	width:5px ;
 	height:5px ;
 	border-radius:50% ;
@@ -141,9 +180,9 @@
 .userCard1 + .userCard1 {
 	margin-left: 10px;
 	margin-bottom:200px ;
- }
+}
 
- .userpho{
+.userpho{
 	width: 180px;
 	height: 180px;
 	background-color:white;
@@ -152,7 +191,7 @@
 	margin-left:157px ;
 	z-index: -2;
 	
- }
+}
 .userheader1{
 	height:90px ;
 	background-color:#a6ddef ;
@@ -175,7 +214,8 @@
 	text-align: center;
 	background-color:white;
 	
- }
+}
+
 .userPhoto1{
 	z-index:8;
 	width:150px ;
@@ -194,6 +234,13 @@
 	height: 1px;
 	margin-top:300px ;
 	width:400px ;
+}
+ol{
+	display: inline-flex;
+	font-size:16px ;
+	align-items: center;
+	flex-direction:row;
+	justify-content:space-evenly	
 }
 .olFollower{
 	padding-top:-8px ;
@@ -215,26 +262,23 @@ padding-bottom: -5px;
 	display: flex;
 	justify-content: center;
 	}
- .socialsItem {
+.socialsItem {
 	font-size: 20px;
 	color: aqua;
 }
- .socialsItem + .socialsItem {
+.socialsItem + .socialsItem {
 	margin-left: 10px;
- }
- a {
+}
+a {
 	text-decoration: none;
 	color: inherit;
- }
- 
- .facebook {
+}
+.facebook {
 	color: #537bbf;
- }
- 
- .twitter {
+}
+.twitter {
 	color: #68cdee;
- }
- 
- .linkedIn {
+}
+.linkedIn {
 	color: #1f85b9;
- }
+}
